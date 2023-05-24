@@ -1,0 +1,19 @@
+.home-container{
+    display: grid; 
+    grid-template-columns: 2fr 1fr;
+    margin: 20px;
+}
+.games-container{
+    background-color: beige;
+    text-align: left;
+}
+.cart-container{
+    background-color: aqua;
+}
+.sports-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 5px;
+    grid-gap: 5px;
+
+}
