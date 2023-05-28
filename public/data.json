@@ -2,31 +2,37 @@
     {
         "img":"./picture/img-football.jpg",
         "name":"football",
-        "time":30
+        "time":30,
+        "id" : 0
     },
     {
         "img":"./picture/img-cricket.jpg",
         "name":"cricket",
-        "time":20
+        "time":20,
+        "id" : 1
     },
     {
         "img":"./picture/img-basketball.jfif",
         "name":"basketball",
-        "time":25
+        "time":25,
+        "id" : 2
     },
     {
         "img":"./picture/img-tennis.jpg",
         "name":"tennis",
-        "time":35
+        "time":35,
+        "id" : 3
     },
     {
         "img":"./picture/img-hockey.jpg",
         "name":"hockey",
-        "time":40
+        "time":40,
+        "id" : 4
     },
     {
         "img":"./picture/img-boxing.jpg",
         "name":"boxing",
-        "time":45
+        "time":45,
+        "id" : 5
     }
 ]

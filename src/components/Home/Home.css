@@ -1,19 +1,23 @@
 .home-container{
     display: grid; 
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 1fr;
     margin: 20px;
 }
 .games-container{
-    background-color: beige;
+    background-color: rgb(241, 241, 237);
     text-align: left;
 }
+
 .cart-container{
-    background-color: aqua;
+    background-color: rgb(246, 248, 248);
 }
 .sports-container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin: 5px;
     grid-gap: 5px;
-
+}
+.btn-info{
+    margin: 2px;
+    border-radius:rounded-circle;
 }

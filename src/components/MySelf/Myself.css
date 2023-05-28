@@ -1,0 +1,9 @@
+.info-myslf{
+    display: flex;
+    justify-content: center;
+}
+
+.info-myslf div{
+    margin: 5px;
+    /* width: 100px; */
+}
