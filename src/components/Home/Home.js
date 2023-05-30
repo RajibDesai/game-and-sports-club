@@ -10,6 +10,7 @@ const Home = () => {
     const [sports,setSports] = useState([]);
     const [cart,setCart] = useState([])
 
+
     useEffect(()=>{
         fetch('data.json')
         .then(res=>res.json())
@@ -21,7 +22,7 @@ const Home = () => {
       const newCart = [...cart,sport];
       setCart(newCart)
     }
-
+    
     return (
         <div className='home-container'>
           <div className='games-container'>
