@@ -1,8 +1,9 @@
 import React from 'react';
+import './Question.css'
 
 const Question = () => {
     return (
-        <div>
+        <div className='question'>
             <div>
             <h4>How does react js works</h4>
             <p>Instead of manipulating the browser's DOM directly,
@@ -26,6 +27,20 @@ const Question = () => {
                     in some cases, and the way to transmit data among components
                      is through props. 
                     </p>
+            </div>
+
+            <div>
+                <h4>different works of useEffect except data load</h4>
+                <p>useEffect runs on every render. That means that when 
+                    the count changes, a render happens, which then triggers
+                     another effect.
+
+                      This is not what we want. There are several 
+                      ways to control when side effects run.
+
+                      We should always include the second parameter which accepts an array.
+                       We can optionally
+                       pass dependencies to useEffect in this array.</p>
             </div>
         </div>
     );

@@ -1,3 +1,5 @@
+import React from 'react';
+import './cart.css'
 
 const Cart = (props) => {
   const {cart,breack,handleBreackTime } = props;
@@ -10,7 +12,7 @@ const Cart = (props) => {
 
 
     return (
-        <div>
+        <div className="cart">
              <h3 className='fw-bold mt-3'>Add A Break</h3>
                <div className="card">
                   <div className="card-body">
@@ -36,20 +38,3 @@ const Cart = (props) => {
 
 export default Cart;
 
-// import React from 'react';
-
-// const Cart = (props) => {
-//   const {cart} = props;
-//   console.log(cart);
-//   let time = 0;
-//   for(const game of cart){
-//        time=time+game.time
-//   }
-//   return (
-//     <div>
-//       <p>Practice Detail: {time}</p>
-//     </div>
-//   );
-// };
-
-// export default Cart;

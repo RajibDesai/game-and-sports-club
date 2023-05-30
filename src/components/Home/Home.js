@@ -31,7 +31,8 @@ const handleBreackTime = () =>{
 }
     
     return (
-        <div className='home-container'>
+        <div>
+          <div className='home-container'>
           <div className='games-container'>
             <h1><FontAwesomeIcon icon={faFootball}></FontAwesomeIcon> Game And Sports World</h1> 
             <h2>Our Today's Activity</h2>
@@ -52,9 +53,9 @@ const handleBreackTime = () =>{
                handleBreackTime={handleBreackTime}>
                </Cart>
            </div>
-           <Question></Question>
       </div>
+      <Question></Question>
+        </div>
     );
 };
-
 export default Home;
