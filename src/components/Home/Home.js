@@ -9,8 +9,9 @@ import Cart from '../Cart/Cart';
 const Home = () => {
     const [sports,setSports] = useState([]);
     const [cart,setCart] = useState([])
+    const [breack,setBreack]=useState(0)
 
-
+    const breackTime =10
     useEffect(()=>{
         fetch('data.json')
         .then(res=>res.json())
@@ -22,6 +23,11 @@ const Home = () => {
       const newCart = [...cart,sport];
       setCart(newCart)
     }
+
+const handleBreackTime = () =>{
+  
+  setBreack(breackTime)
+}
     
     return (
         <div className='home-container'>
@@ -41,7 +47,9 @@ const Home = () => {
          </div>
               <div className='cart-container'>
                 <Myself></Myself>
-               <Cart cart={cart}></Cart>
+               <Cart cart={cart} breack={breack}
+               handleBreackTime={handleBreackTime}>
+               </Cart>
            </div>
       </div>
     );

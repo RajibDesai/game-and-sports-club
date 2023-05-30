@@ -1,6 +1,6 @@
 
 const Cart = (props) => {
-  const {cart} = props;
+  const {cart,breack,handleBreackTime } = props;
   // console.log(cart);
   let time = 0;
   for(const game of cart){
@@ -15,7 +15,7 @@ const Cart = (props) => {
                <div className="card">
                   <div className="card-body">
                   <p>
-                    <button className='btn btn-info rounded-circle'>10S</button>
+                    <button onClick={()=>handleBreackTime} className='btn btn-info rounded-circle'>10S</button>
                     <button className='btn btn-info rounded-circle'>10S</button>
                     <button className='btn btn-info rounded-circle'>15s</button>
                     <button className='btn btn-info rounded-circle'>20s</button>
@@ -27,7 +27,7 @@ const Cart = (props) => {
                 <div className="card">
                   <div className="card-body">
                   <h4>Practice Time: {time}</h4>
-                  <h4>Breack Time :</h4>
+                  <h4>Breack Time : {breack}</h4>
                   </div>
                </div> 
         </div>
