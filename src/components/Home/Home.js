@@ -5,6 +5,7 @@ import  './Home.css'
 import Game from '../Game/Game';
 import Myself from '../MySelf/Myself';
 import Cart from '../Cart/Cart';
+import Question from '../Question/Question';
 
 const Home = () => {
     const [sports,setSports] = useState([]);
@@ -51,6 +52,7 @@ const handleBreackTime = () =>{
                handleBreackTime={handleBreackTime}>
                </Cart>
            </div>
+           <Question></Question>
       </div>
     );
 };
