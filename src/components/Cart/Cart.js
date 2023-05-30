@@ -15,7 +15,7 @@ const Cart = (props) => {
                <div className="card">
                   <div className="card-body">
                   <p>
-                    <button onClick={()=>handleBreackTime} className='btn btn-info rounded-circle'>10S</button>
+                    <button onClick={(e)=>handleBreackTime} className='btn btn-info rounded-circle'>10S</button>
                     <button className='btn btn-info rounded-circle'>10S</button>
                     <button className='btn btn-info rounded-circle'>15s</button>
                     <button className='btn btn-info rounded-circle'>20s</button>
