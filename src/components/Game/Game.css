@@ -9,8 +9,8 @@
     position: relative;
 }
 .game-container img{
-    width: 275px;
-    height: 250px;
+    width: 250px;
+    height: 200px;
     border-radius: 8px;
     margin: 7px;
 }
