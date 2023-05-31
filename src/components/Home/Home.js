@@ -33,28 +33,28 @@ const handleBreackTime = () =>{
     return (
         <div>
           <div className='home-container'>
-          <div className='games-container'>
-            <h1><FontAwesomeIcon icon={faFootball}></FontAwesomeIcon> Game And Sports World</h1> 
-            <h2>Our Today's Activity</h2>
+            <div className='games-container'>
+              <h1><FontAwesomeIcon icon={faFootball}></FontAwesomeIcon> Game And Sports World</h1> 
+              <h2>Our Today's Activity</h2>
 
-            <div className='sports-container'>
-             {
-                sports.map(sport=> <Game 
+             <div className='sports-container'>
+               {
+                  sports.map(sport=> <Game 
                   handleAddToCard= {handleAddToCard}
-                key={sport.id}
+                   key={sport.id}
                   sport={sport}
-                ></Game>)
-             } 
-            </div>
-         </div>
-              <div className='cart-container'>
-                <Myself></Myself>
-               <Cart cart={cart} breack={breack}
-               handleBreackTime={handleBreackTime}>
-               </Cart>
+                  ></Game>)
+                } 
+             </div>
            </div>
-      </div>
-      <Question></Question>
+              <div className='cart-container'>
+                  <Myself></Myself>
+                  <Cart cart={cart} breack={breack}
+                   handleBreackTime={handleBreackTime}>
+                  </Cart>
+              </div>
+         </div>
+         <div><Question></Question></div>
         </div>
     );
 };

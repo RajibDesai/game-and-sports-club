@@ -1,5 +1,7 @@
 import React from 'react';
 import './cart.css'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Cart = (props) => {
   const {cart,breack,handleBreackTime } = props;
@@ -9,7 +11,9 @@ const Cart = (props) => {
        time=time+game.time
   }
 
-
+const reactToastify =()=>{
+  toast("Your Target is Complite")
+}
 
     return (
         <div className="cart">
@@ -32,6 +36,8 @@ const Cart = (props) => {
                   <h4>Breack Time : {breack}</h4>
                   </div>
                </div> 
+               <button onClick={reactToastify} className='btn-toast btn btn-info mt-5'>Activity Completed</button>
+               <ToastContainer/>
         </div>
     );
 };

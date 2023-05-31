@@ -2,3 +2,7 @@
     position: sticky;
     top: 0;
 }
+.btn-toast{
+    height: 40px;
+    width: 300px;
+}
