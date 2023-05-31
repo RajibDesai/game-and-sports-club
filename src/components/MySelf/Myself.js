@@ -15,11 +15,11 @@ const Myself = () => {
                         </div>
                         <div>
                             <h4>Weight</h4>
-                            <p>65 Kg</p>
+                            <p className='bg bg-info'>65 Kg</p>
                         </div>
                         <div>
                             <h4>Age</h4>
-                            <p>35</p>
+                            <p className='bg bg-info'>35Y</p>
                         </div>
                     </div>
                  </div>
